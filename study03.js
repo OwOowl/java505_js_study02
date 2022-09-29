@@ -87,7 +87,7 @@ str9 = str7.replace(", ", "");
 console.log("replace()로 문자 변경 : " + str9);
 // 정규표현식으로 공통된 문자 모두 변경
 str9 = str7.replace(/, /g, "");
-console.log("replace()와 정규표현식으로 검색되는 도믄 문자 변경 : " + str9);
+console.log("replace()와 정규표현식으로 검색되는 모든 문자 변경 : " + str9);
 
 console.log();
 
@@ -116,8 +116,8 @@ console.log();
 console.log("원본 문자열 str10 : " + str10 + "\tsrt11 : " + str11);
 let str12 = str10.concat(" ", str11);
 console.log("concat() 사용 후 : " + str12);
-str12 = str10 + " " + str11;
-console.log("str10 + ' ' + str11 : " + str12);
+// str12 = str10 + " " + str11;
+// console.log("str10 + ' ' + str11 : " + str12);
 
 console.log();
 
@@ -159,6 +159,7 @@ const str16 = "replace()와 정규표현식으로 검색되는 모든 문자 변
 console.log("원본 문자열 : " + str16);
 let index = str16.indexOf("모든");
 console.log("indexOf('모든') 의 위치 : " + index);
+// 30번 index 이후의 " "의 위치
 index = str16.indexOf(" ", 30);
 console.log("indexOf(' ', 30)의 위치 : " + index);
 
