@@ -5,13 +5,16 @@ console.log("----- 숫자 관련 함수 -----");
 let num1 = 123;
 console.log("원본 데이터 : ");
 console.log(num1);
+console.log(typeof num1);
 console.log("toString() 변환 : " + num1.toString());
+console.log(typeof num1.toString());
 console.log(`toString() 변환 : ${(100 + 200).toString()}`);
+
 
 console.log();
 
 
-// toExponential() : 숫자 데이터를 지수표기법으로 변환. 반올림으로 동작
+// toExponential() : 숫자 데이터를 지수표기법으로 변환. 반올림
 //  사용법 : 숫자데이터.toExponential(표시할 자리수);
 let num2 = 9.654;
 console.log("원본 데이터 : " + num2);
@@ -38,8 +41,8 @@ console.log();
 const num3 =  "1234";
 const num4 = "12삼사";
 console.log(`원본 데이터 num3 : ${num3}\tnum4 : ${num4}`);
-console.log(`isNoN(num3) : ${isNaN(num3)}`);
-console.log(`isNoN(num3) : ${isNaN(num4)}`);
+console.log(`isNaN(num3) : ${isNaN(num3)}`);
+console.log(`isNaN(num3) : ${isNaN(num4)}`);
 
 console.log();
 
@@ -86,8 +89,8 @@ console.log();
 //  사용법 : 변수 = parseFloat(데이터);
 console.log(`parseFloat("10") : ${parseFloat("10")}`);
 console.log(`parseFloat("10.33") : ${parseFloat("10.33")}`);
-console.log(`parseFloat("10 20 30") : ${parseFloat("10 20 30")}`);
 // 중간에 공백이 있을 경우 공백 앞에있는 숫자만 반환. 문자가 올 경우 NaN
+console.log(`parseFloat("10 20 30") : ${parseFloat("10 20 30")}`);
 console.log(`parseFloat("10 year") : ${parseFloat("10 year")}`);
 console.log(`parseFloat("year 10") : ${parseFloat("year 10")}`);
 
